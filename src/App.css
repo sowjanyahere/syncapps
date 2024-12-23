@@ -1,0 +1,183 @@
+:root{
+  --Colors-Border-border-secondary:#E9EAEB;
+  --Font-family-font-family-body:"Inter", serif;
+  --Font-size-text-md:16px;
+  --Line-height-text-md:24px;
+  --Colors-text-secondary_hover:#252B37;
+  --Colors-text-secondary:#414651;
+  --Colors-Background-bg-active: #FAFAFA;
+  --Header-icon-Color: #717680;
+  --colors-text-primary-900:#181D27;
+  --colors-text-tertiary: #535862;
+  --Font-size-text-sm:16px;
+  --Line-height-text-sm:20px
+}
+* {
+  font-family: "Inter", serif;
+}
+
+.ui_header_navbar .nav-item {
+  margin: 6px;
+}
+
+.ui_header_navbar .nav-item .nav-link{
+  padding: 12px;
+  font-size: var(--Font-size-text-md);
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.ui_header_navbar .nav-item .nav-link.active , .ui_header_navbar .nav-item .nav-link:hover{
+  background-color: #FAFAFA;
+}
+
+.primary-btn-UI-Header {
+  padding: 10px 20px;
+  font-size: var(--Font-size-text-md);
+  font-weight: bold;
+  color: #3f434a;
+  background-color: #ffffff;
+  border: 1px solid #d4d6da;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn-UI-Header:hover {
+  border: 1px solid #7b4cd9;
+  background-color: #7b4cd9;
+  color: #fff;
+  transform: translateY(-2px); 
+}
+
+.secondary-btn-UI-Header {
+  padding: 12px 24px;
+  font-size: var(--Font-size-text-md);
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #7b4cd9;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-btn-UI-Header:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); 
+}
+.search_info_label {
+  font-size: var(--Font-size-text-md);
+  font-weight:400;
+  line-height: var(--Line-height-text-md);
+}
+
+.border_bottom_primary{
+  border-bottom: 1px solid var(--Colors-Border-border-secondary, #E9EAEB)
+}
+
+.react-datepicker-popper {
+  z-index: 999999 !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Basic styling for the dropdown container */
+.search_dropdown {
+  position: relative;
+  width: 100%;  /* Ensure it aligns with the input field */
+}
+
+/* Styling the dropdown list */
+.search_dropdown .list-group {
+  position: absolute;
+  top: 100%;  /* Position the dropdown list just below the input */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px; /* Limit the max height of the dropdown */
+  overflow-y: auto; /* Scroll if the list exceeds max height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+  margin-top: 5px;
+}
+
+/* Styling individual list items */
+.search_dropdown .list-group-item {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight list items on hover */
+.search_dropdown .list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for the "No results" message */
+.no-results {
+  padding: 10px;
+  color: #999; /* Light gray color */
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Ensure the dropdown is responsive */
+@media (max-width: 767px) {
+  .search_dropdown .list-group {
+    max-height: 150px; /* Adjust the dropdown height on small screens */
+  }
+}
+
+.profile_dropdown li {
+  border-radius: 6px;
+}
+
+.locationList_con ul.dropdown-menu {
+  height: 200px;
+    overflow-y: scroll;
+} 
+
+.leaflet-container {
+  border-radius: 12px !important;
+  border: 1px solid #E9EAEB;
+  box-shadow: 0px 1px 2px 0px #0A0D120D;
+
+}
+
+.pagination_btn {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pg_num {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: transparent !important;
+}
+
+.pg_num.active {
+  background-color: #FAFAFA !important;
+}

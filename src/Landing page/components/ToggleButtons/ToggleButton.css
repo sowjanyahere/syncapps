@@ -1,0 +1,27 @@
+.toggle-container {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .toggle-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-btn.active {
+    background-color: #f1f1f1;
+  }
+  
+  .toggle-btn:not(.active):hover {
+    background-color: #eaeaea;
+  }
+  
+  .toggle-btn:first-child {
+    border-right: 1px solid #ccc;
+  }
+  

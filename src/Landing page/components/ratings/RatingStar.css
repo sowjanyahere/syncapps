@@ -1,0 +1,22 @@
+/* Star container */
+.rating-stars {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+  
+  .full {
+    color: #ffcc00; 
+  }
+  
+  
+  .half {
+    color: #ffcc00; 
+  }
+  
+  
+  .empty {
+    color: #d3d3d3; 
+  }
+  
